@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position pracctice</title>
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;">
+
+    <div style="
+      background-color: black;
+      color: white;
+      /* position: fixed; is used to skick a div in the page..it has some properties like 
+      top which specify how far the element from the top
+      left specify how far the element from the left */
+      position: fixed;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      height: 30px;
+      /* the z-index: 1; is used to decide which element should be appear front...the element with large z-index: 10; appear in front*/
+      
+      
+      ">Header fixed</div>
+
+      <div style="
+      background-color: blue;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 30px;
+      width: 75px;
+      
+      ">
+        sidebar
+        <div style="position: absolute;
+      color: white;
+      background-color: red;
+      top: 0;
+      right: 0;">hey</div>
+      </div>
+     
+      <!-- in position fixed the elements are placed in the browser window
+      in position absolute the elements are placed on the page  means which move along with the page
+      -->
+
+      <div style="position: absolute;
+      color: white;
+      background-color: red;
+      right: 20px;
+      top: 50px;">absolute</div>
+
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      /* position: static; is default position */
+      position: static;
+      ">div1</div>
+
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    ">div2
+    <div style="position: absolute;
+    color: white;
+    background-color: rgb(6, 6, 6);
+    bottom: 10px;
+    right: 10px;">
+    2.00
+  </div>
+</div>
+
+  </body>
+</html>

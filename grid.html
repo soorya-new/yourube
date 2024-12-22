@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Gride Practicce</title></head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 100px 100px;
+      ">
+    <div style="background-color: aqua;"> div1</div>
+    <div style="background-color: lightcoral;">div2</div>
+  </div>
+
+  <div style="
+      display: grid;
+      /* number of columns shown as the 100px 100px */
+      /* 1fr means free space */
+      grid-template-columns: 100px 100px 100px 1fr;
+      margin-top: 10px;
+      ">
+    <div style="background-color: aqua;"> div1</div>
+    <div style="background-color: lightcoral;">div2</div>
+    <div style="background-color: blueviolet;">div3</div>
+    </div>
+
+    <div style="
+      display: grid;
+      /* here the div3 and div4 take free spaces */
+      grid-template-columns: 100px 100px 1fr 2fr;
+      margin-top: 10px;
+      ">
+    <div style="background-color: aqua;"> div1</div>
+    <div style="background-color: lightcoral;">div2</div>
+    <div style="background-color: blueviolet;">div3</div>
+    <div style="background-color: rgb(186, 226, 43);">div4</div>
+  </div>
+
+  
+  <div style="
+  display: grid;
+  /* here the div3 and div4 take free spaces */
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+  height: 300px;
+  column-gap: 20px;
+  row-gap: 40px;
+  ">
+<div style="background-color: aqua;">div1</div>
+<div style="background-color: lightcoral;">div2</div>
+<div style="background-color: aqua;">div3</div>
+<div style="background-color: lightcoral;">div2</div>
+<div style="background-color: aqua;">div3</div>
+<div style="background-color: lightcoral;">div2</div>
+
+
+</div>
+  </body>
+</html>
